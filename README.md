@@ -13,8 +13,6 @@
 [![Ollama](https://img.shields.io/badge/Ollama-Local_AI-10B981?style=flat-square)](https://ollama.com/)
 [![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector_Search-6366F1?style=flat-square)](https://www.trychroma.com/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-F59E0B?style=flat-square)](LICENSE)
-
 > **No API keys. No cloud. No subscriptions. No data leaving your machine.**
 
 </div>
@@ -47,23 +45,14 @@ Built for **students, researchers, developers, and knowledge workers** who refus
 
 ## Features
 
-**Query Your Entire Knowledge Base**
-Ask in plain English across everything you've saved. MindVault routes the query to the right local model, retrieves semantically relevant chunks, synthesizes an answer, critiques it for accuracy, and streams it back with confidence scores and clickable source previews.
- 
-**Living Knowledge Graph**
-Every new memory is automatically compared against existing ones. Meaningful semantic matches become edges in an interactive D3 force-directed graph. Click any node for a backlink panel with similarity scores, shared tags, and relationship explanations — all computed locally.
- 
-**Ingest Anything**
-PDFs, MP3s, MP4s, PNGs, JPGs, markdown, plain text, and URLs. Whisper transcribes audio, LLaVA understands images, Playwright scrapes web pages, PyMuPDF extracts PDFs. Everything chunked, embedded, tagged, and stored automatically.
- 
-**Smart Reminders**
-Attach once, daily, or weekly reminders to any memory at upload time or afterward. Due reminders surface on the home dashboard with dismiss and reschedule controls.
- 
-**Auto-Generated Tags**
-Local AI suggests tags for every memory. Editable, filterable on the memory timeline, and used to strengthen graph connections between related memories.
- 
-**Daily and Weekly AI Reflection**
-A locally-generated digest summarizes recent activity: new memories, graph growth, recurring themes, upcoming reminders, and a suggested next action. Updated on demand. Never sent anywhere.
+| | |
+|---|---|
+| **Query Your Knowledge Base** | Ask in plain English across everything you've saved. MindVault routes to the right local model, retrieves relevant chunks, synthesizes an answer, critiques it, and streams it back with confidence scores and source previews. |
+| **Living Knowledge Graph** | Every new memory is compared against existing ones. Strong semantic matches become edges in an interactive D3 force graph. Click any node for a backlink panel with similarity scores, shared tags, and relationship explanations. |
+| **Ingest Anything** | PDFs, MP3s, MP4s, images, markdown, plain text, and URLs. Whisper transcribes audio, LLaVA understands images, Playwright scrapes pages, PyMuPDF extracts PDFs — chunked, embedded, tagged, and stored automatically. |
+| **Smart Reminders** | Attach once, daily, or weekly reminders to any memory at upload time or later. Due reminders surface on the home dashboard with dismiss and reschedule controls. |
+| **Auto-Generated Tags** | Local AI suggests tags for every memory. Editable, filterable on the timeline, and used to strengthen graph connections between related memories. |
+| **AI Reflection Digest** | A locally-generated daily or weekly digest covers new memories, graph growth, recurring themes, upcoming reminders, and a suggested next action. Updated on demand. Never sent anywhere. |
  
 ---
 
