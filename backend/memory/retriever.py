@@ -1,9 +1,19 @@
+from typing import TYPE_CHECKING, Protocol
+
 from memory.embedder import Embedder
-from storage.vector_store import VectorStore
+
+if TYPE_CHECKING:
+    from storage.vector_store import VectorStore
+
+
+class SearchableVectorStore(Protocol):
+    def search(self, query_embedding: list[float], n_results: int = 5) -> list[dict]: ...
+
+    def keyword_search(self, query: str, n_results: int = 5) -> list[dict]: ...
 
 
 class Retriever:
-    def __init__(self, embedder: Embedder, vector_store: VectorStore) -> None:
+    def __init__(self, embedder: Embedder, vector_store: "VectorStore | SearchableVectorStore") -> None:
         self.embedder = embedder
         self.vector_store = vector_store
 

@@ -15,6 +15,8 @@ jobs:
   backend:
     name: Backend tests
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: .
     defaults:
       run:
         working-directory: backend
@@ -33,7 +35,7 @@ jobs:
           pip install -r requirements-ci.txt
 
       - name: Run unit tests
-        run: pytest -q
+        run: python -m pytest tests -q
 
   frontend:
     name: Frontend build
