@@ -1,0 +1,48 @@
+services:
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    networks:
+      - mindvault
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - ollama
+    volumes:
+      - ./storage:/app/storage
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+      DATABASE_PATH: /app/storage/mindvault.db
+      CHROMA_PATH: /app/storage/chroma
+      GRAPH_PATH: /app/storage/graph.json
+      UPLOAD_PATH: /app/storage/uploads
+      MAX_FILE_SIZE_MB: 100
+      STORAGE_PATH: /app/storage
+      FRONTEND_ORIGIN: http://localhost:3000
+    networks:
+      - mindvault
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+      NEXT_PUBLIC_WS_URL: ws://localhost:8000/ws
+    networks:
+      - mindvault
+
+volumes:
+  ollama_data:
+
+networks:
+  mindvault:
+    driver: bridge
