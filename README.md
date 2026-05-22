@@ -47,23 +47,25 @@ Built for **students, researchers, developers, and knowledge workers** who refus
 
 ## Features
 
-** Query Your Entire Knowledge Base**
+**Query Your Entire Knowledge Base**
 Ask in plain English across everything you've saved. MindVault routes the query to the right local model, retrieves semantically relevant chunks, synthesizes an answer, critiques it for accuracy, and streams it back with confidence scores and clickable source previews.
-
-** Living Knowledge Graph**
+ 
+**Living Knowledge Graph**
 Every new memory is automatically compared against existing ones. Meaningful semantic matches become edges in an interactive D3 force-directed graph. Click any node for a backlink panel with similarity scores, shared tags, and relationship explanations — all computed locally.
-
-** Ingest Anything**
+ 
+**Ingest Anything**
 PDFs, MP3s, MP4s, PNGs, JPGs, markdown, plain text, and URLs. Whisper transcribes audio, LLaVA understands images, Playwright scrapes web pages, PyMuPDF extracts PDFs. Everything chunked, embedded, tagged, and stored automatically.
-
-** Smart Reminders**
+ 
+**Smart Reminders**
 Attach once, daily, or weekly reminders to any memory at upload time or afterward. Due reminders surface on the home dashboard with dismiss and reschedule controls.
-
-** Auto-Generated Tags**
+ 
+**Auto-Generated Tags**
 Local AI suggests tags for every memory. Editable, filterable on the memory timeline, and used to strengthen graph connections between related memories.
-
-** Daily & Weekly AI Reflection**
+ 
+**Daily and Weekly AI Reflection**
 A locally-generated digest summarizes recent activity: new memories, graph growth, recurring themes, upcoming reminders, and a suggested next action. Updated on demand. Never sent anywhere.
+ 
+---
 
 ---
 
