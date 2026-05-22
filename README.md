@@ -71,7 +71,7 @@ A locally-generated digest summarizes recent activity: new memories, graph growt
 
 ## Architecture
 
-![Architecture](screenshot/architecture.png)
+![Architecture](screenshots/architecture.png)
 
 ---
 
